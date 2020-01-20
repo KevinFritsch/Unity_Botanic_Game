@@ -1,8 +1,5 @@
 
 
-
-
-
 # PLANTVENTURE
 
 ![Affiche du jeu](/Documents/affiche_plantventure.jpg )
@@ -88,4 +85,4 @@ Le joueur va dans un premier temps acquérir le plus de connaissances possibles 
 
 * Kévin FRITSCH
 * Thomas PERSONENI
-* Justin GUIOT# Unity_Botanic_Game
+* Justin GUIOT
