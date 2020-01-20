@@ -1,0 +1,194 @@
+\hypertarget{class_controleur_joueur}{}\section{Controleur\+Joueur Class Reference}
+\label{class_controleur_joueur}\index{Controleur\+Joueur@{Controleur\+Joueur}}
+Inheritance diagram for Controleur\+Joueur\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_controleur_joueur}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{class_controleur_joueur_ae3daabb127508467427792e952123acf}{nom}} = \char`\"{}\char`\"{}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{class_controleur_joueur}{Controleur\+Joueur}} \mbox{\hyperlink{class_controleur_joueur_ac7deae3a66b01bb158a1920e47969925}{instance}} = null
+\item 
+static bool \mbox{\hyperlink{class_controleur_joueur_a590a9556e120874ec56fcea1b69601b0}{autoriser\+Mouvement}} = true
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_controleur_joueur_a81c77842ce406f01ce89e4ea7cdc47e3}{Awake}} ()
+\item 
+void \mbox{\hyperlink{class_controleur_joueur_adf151124295f736d0d940a3b3601f35e}{Start}} ()
+\item 
+void \mbox{\hyperlink{class_controleur_joueur_a071e21e095c237bccef56bd6bea690fc}{Update}} ()
+\item 
+void \mbox{\hyperlink{class_controleur_joueur_af1b2d1d91472251e5c57d50aa7422b10}{bouger}} (Vector3 \mbox{\hyperlink{class_controleur_joueur_a54e1860c30d3fc26fe74a4caeb52c66b}{direction}}, int \mbox{\hyperlink{class_controleur_joueur_a47070fe9a7773bfd9f110deef20ce097}{sprite\+Direction}}, float x, float y)
+\item 
+bool \mbox{\hyperlink{class_controleur_joueur_a2943f91d2df443fc1a3208dbe57f9f9c}{detecter\+Collision}} (Vector3 \mbox{\hyperlink{class_controleur_joueur_a54e1860c30d3fc26fe74a4caeb52c66b}{direction}})
+\item 
+void \mbox{\hyperlink{class_controleur_joueur_ab65cb2d9d498fb5f21f542c03878189f}{parler\+Au\+P\+NJ}} ()
+\item 
+I\+Enumerator \mbox{\hyperlink{class_controleur_joueur_adcda5dbe099ac9d9276d052759ea6cab}{creer\+Plante}} ()
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \mbox{\hyperlink{class_controleur_joueur_a0ac61d9623f2148f02c60a4e0c6b6e4c}{speed}} = 4
+\item 
+Vector2 \mbox{\hyperlink{class_controleur_joueur_a0ead80c9a1e0819235ec62038b274fd4}{start\+Pos}}
+\item 
+Vector2 \mbox{\hyperlink{class_controleur_joueur_aa64173e4c604d9e2d6a646a7cff95a35}{target\+Pos}}
+\item 
+float \mbox{\hyperlink{class_controleur_joueur_aca7166f5bec51b3af5982dbafe681305}{timer}}
+\item 
+bool \mbox{\hyperlink{class_controleur_joueur_a6b328040f56d41178757fcc561bf9334}{is\+Moving}}
+\item 
+Animator \mbox{\hyperlink{class_controleur_joueur_aac567782c2c28039b94ca89700437d97}{animation}}
+\item 
+int \mbox{\hyperlink{class_controleur_joueur_a47070fe9a7773bfd9f110deef20ce097}{sprite\+Direction}} = 0
+\item 
+Vector3 \mbox{\hyperlink{class_controleur_joueur_a54e1860c30d3fc26fe74a4caeb52c66b}{direction}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_controleur_joueur_a81c77842ce406f01ce89e4ea7cdc47e3}\label{class_controleur_joueur_a81c77842ce406f01ce89e4ea7cdc47e3}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!Awake@{Awake}}
+\index{Awake@{Awake}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{Awake()}{Awake()}}
+{\footnotesize\ttfamily void Controleur\+Joueur.\+Awake (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet d\textquotesingle{}initialiser l\textquotesingle{}instance de la classe sous forme d\textquotesingle{}un singleton. \mbox{\Hypertarget{class_controleur_joueur_af1b2d1d91472251e5c57d50aa7422b10}\label{class_controleur_joueur_af1b2d1d91472251e5c57d50aa7422b10}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!bouger@{bouger}}
+\index{bouger@{bouger}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{bouger()}{bouger()}}
+{\footnotesize\ttfamily void Controleur\+Joueur.\+bouger (\begin{DoxyParamCaption}\item[{Vector3}]{direction,  }\item[{int}]{sprite\+Direction,  }\item[{float}]{x,  }\item[{float}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet de déplacer le personnage en fonction des directions souhaitées. 
+\begin{DoxyParams}{Parameters}
+{\em direction} & Vecteur de direction du déplacement. \\
+\hline
+{\em sprite\+Direction} & Entier correspondant à la direction souhaitée. \\
+\hline
+{\em x} & Abscisse du déplacement. \\
+\hline
+{\em y} & Ordonnée du déplacement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_controleur_joueur_adcda5dbe099ac9d9276d052759ea6cab}\label{class_controleur_joueur_adcda5dbe099ac9d9276d052759ea6cab}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!creer\+Plante@{creer\+Plante}}
+\index{creer\+Plante@{creer\+Plante}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{creer\+Plante()}{creerPlante()}}
+{\footnotesize\ttfamily I\+Enumerator Controleur\+Joueur.\+creer\+Plante (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet d\textquotesingle{}intéragir avec une plante et de lancer le menu de création de la plante. \mbox{\Hypertarget{class_controleur_joueur_a2943f91d2df443fc1a3208dbe57f9f9c}\label{class_controleur_joueur_a2943f91d2df443fc1a3208dbe57f9f9c}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!detecter\+Collision@{detecter\+Collision}}
+\index{detecter\+Collision@{detecter\+Collision}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{detecter\+Collision()}{detecterCollision()}}
+{\footnotesize\ttfamily bool Controleur\+Joueur.\+detecter\+Collision (\begin{DoxyParamCaption}\item[{Vector3}]{direction }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet de détecter une collision entre un obstacle présent sur la carte et le vecteur de direction du déplacement du personnage. 
+\begin{DoxyParams}{Parameters}
+{\em direction} & Vecteur de direction du déplacement. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+collision Booléen qui permet de savoir si il y a une collision ou non. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_controleur_joueur_ab65cb2d9d498fb5f21f542c03878189f}\label{class_controleur_joueur_ab65cb2d9d498fb5f21f542c03878189f}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!parler\+Au\+P\+NJ@{parler\+Au\+P\+NJ}}
+\index{parler\+Au\+P\+NJ@{parler\+Au\+P\+NJ}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{parler\+Au\+P\+N\+J()}{parlerAuPNJ()}}
+{\footnotesize\ttfamily void Controleur\+Joueur.\+parler\+Au\+P\+NJ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet de parler avec un personnage non joueur. \mbox{\Hypertarget{class_controleur_joueur_adf151124295f736d0d940a3b3601f35e}\label{class_controleur_joueur_adf151124295f736d0d940a3b3601f35e}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!Start@{Start}}
+\index{Start@{Start}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{Start()}{Start()}}
+{\footnotesize\ttfamily void Controleur\+Joueur.\+Start (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet d\textquotesingle{}initialiser les attributs de la classe. \mbox{\Hypertarget{class_controleur_joueur_a071e21e095c237bccef56bd6bea690fc}\label{class_controleur_joueur_a071e21e095c237bccef56bd6bea690fc}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!Update@{Update}}
+\index{Update@{Update}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void Controleur\+Joueur.\+Update (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet de mettre à jour les éléments de la classe en fonction des déplacements et des mouvements du personnage en temps réel. 
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_controleur_joueur_aac567782c2c28039b94ca89700437d97}\label{class_controleur_joueur_aac567782c2c28039b94ca89700437d97}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!animation@{animation}}
+\index{animation@{animation}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{animation}{animation}}
+{\footnotesize\ttfamily Animator Controleur\+Joueur.\+animation\hspace{0.3cm}{\ttfamily [private]}}
+
+Animation du déplacement du personnage. \mbox{\Hypertarget{class_controleur_joueur_a590a9556e120874ec56fcea1b69601b0}\label{class_controleur_joueur_a590a9556e120874ec56fcea1b69601b0}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!autoriser\+Mouvement@{autoriser\+Mouvement}}
+\index{autoriser\+Mouvement@{autoriser\+Mouvement}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{autoriser\+Mouvement}{autoriserMouvement}}
+{\footnotesize\ttfamily bool Controleur\+Joueur.\+autoriser\+Mouvement = true\hspace{0.3cm}{\ttfamily [static]}}
+
+Booléen qui permet de savoir si le déplacement du personnage est autorisé ou non en fonction des obstacles présents sur la carte. \mbox{\Hypertarget{class_controleur_joueur_a54e1860c30d3fc26fe74a4caeb52c66b}\label{class_controleur_joueur_a54e1860c30d3fc26fe74a4caeb52c66b}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!direction@{direction}}
+\index{direction@{direction}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily Vector3 Controleur\+Joueur.\+direction\hspace{0.3cm}{\ttfamily [private]}}
+
+Vecteur de la direction du personnage. \mbox{\Hypertarget{class_controleur_joueur_ac7deae3a66b01bb158a1920e47969925}\label{class_controleur_joueur_ac7deae3a66b01bb158a1920e47969925}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!instance@{instance}}
+\index{instance@{instance}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{instance}{instance}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_controleur_joueur}{Controleur\+Joueur}} Controleur\+Joueur.\+instance = null\hspace{0.3cm}{\ttfamily [static]}}
+
+Instance de la classe courrante \mbox{\hyperlink{class_controleur_joueur}{Controleur\+Joueur}} initialisée nulle au départ. \mbox{\Hypertarget{class_controleur_joueur_a6b328040f56d41178757fcc561bf9334}\label{class_controleur_joueur_a6b328040f56d41178757fcc561bf9334}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!is\+Moving@{is\+Moving}}
+\index{is\+Moving@{is\+Moving}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{is\+Moving}{isMoving}}
+{\footnotesize\ttfamily bool Controleur\+Joueur.\+is\+Moving\hspace{0.3cm}{\ttfamily [private]}}
+
+Booléen permettant de savoir si le joueur est en déplacement ou non. \mbox{\Hypertarget{class_controleur_joueur_ae3daabb127508467427792e952123acf}\label{class_controleur_joueur_ae3daabb127508467427792e952123acf}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!nom@{nom}}
+\index{nom@{nom}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{nom}{nom}}
+{\footnotesize\ttfamily string Controleur\+Joueur.\+nom = \char`\"{}\char`\"{}}
+
+Chaine de caractères correspondant au nom du joueuer. \mbox{\Hypertarget{class_controleur_joueur_a0ac61d9623f2148f02c60a4e0c6b6e4c}\label{class_controleur_joueur_a0ac61d9623f2148f02c60a4e0c6b6e4c}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!speed@{speed}}
+\index{speed@{speed}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily float Controleur\+Joueur.\+speed = 4\hspace{0.3cm}{\ttfamily [private]}}
+
+Vitesse de déplacement du personnage. \mbox{\Hypertarget{class_controleur_joueur_a47070fe9a7773bfd9f110deef20ce097}\label{class_controleur_joueur_a47070fe9a7773bfd9f110deef20ce097}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!sprite\+Direction@{sprite\+Direction}}
+\index{sprite\+Direction@{sprite\+Direction}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{sprite\+Direction}{spriteDirection}}
+{\footnotesize\ttfamily int Controleur\+Joueur.\+sprite\+Direction = 0\hspace{0.3cm}{\ttfamily [private]}}
+
+Indexe de la direction du déplacement du personnage \mbox{\Hypertarget{class_controleur_joueur_a0ead80c9a1e0819235ec62038b274fd4}\label{class_controleur_joueur_a0ead80c9a1e0819235ec62038b274fd4}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!start\+Pos@{start\+Pos}}
+\index{start\+Pos@{start\+Pos}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{start\+Pos}{startPos}}
+{\footnotesize\ttfamily Vector2 Controleur\+Joueur.\+start\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+Vecteur de la position de départ. \mbox{\Hypertarget{class_controleur_joueur_aa64173e4c604d9e2d6a646a7cff95a35}\label{class_controleur_joueur_aa64173e4c604d9e2d6a646a7cff95a35}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!target\+Pos@{target\+Pos}}
+\index{target\+Pos@{target\+Pos}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{target\+Pos}{targetPos}}
+{\footnotesize\ttfamily Vector2 Controleur\+Joueur.\+target\+Pos\hspace{0.3cm}{\ttfamily [private]}}
+
+Vecteur de la positon de la cible. \mbox{\Hypertarget{class_controleur_joueur_aca7166f5bec51b3af5982dbafe681305}\label{class_controleur_joueur_aca7166f5bec51b3af5982dbafe681305}} 
+\index{Controleur\+Joueur@{Controleur\+Joueur}!timer@{timer}}
+\index{timer@{timer}!Controleur\+Joueur@{Controleur\+Joueur}}
+\subsubsection{\texorpdfstring{timer}{timer}}
+{\footnotesize\ttfamily float Controleur\+Joueur.\+timer\hspace{0.3cm}{\ttfamily [private]}}
+
+Timer permettant d\textquotesingle{}éffectuer les déplacements. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kevin/\+Documents/\+\_\+\+Informatique S3/\+P\+R\+O\+J\+E\+T T3\+\_\+git/\+Juthoke/\+Juthoke/\+Assets/\+Scripts/Controleur\+Joueur.\+cs\end{DoxyCompactItemize}

@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2eaf9bf430c2d44dbc4e12914d478be, type: 3}
+  m_Name: CheminNeige
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 21300000, guid: 7f324e899b6174940bc28f33e8ff69ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  CheminN:
+  - {fileID: 21300000, guid: bb64bd349aaeb8149a10bb303b78ae34, type: 3}
+  - {fileID: 21300000, guid: 796e84a3716a0924eaa2ab9b59c16787, type: 3}
+  - {fileID: 21300000, guid: f71358c28ed6254419da47e2898f2249, type: 3}
+  - {fileID: 21300000, guid: 22c6b95ea06f1614fad07892f2f1331d, type: 3}
+  - {fileID: 21300000, guid: 7f324e899b6174940bc28f33e8ff69ba, type: 3}
+  - {fileID: 21300000, guid: 2e01702c0c775a6439bee77eb90192a5, type: 3}
+  - {fileID: 21300000, guid: d3feb0fef08db9b4392d874313944a14, type: 3}
+  - {fileID: 21300000, guid: 24648005c991e934a83d2d4e52c63321, type: 3}
+  - {fileID: 21300000, guid: 04f48dc77e8549b40b1800794cb9ae4f, type: 3}
+  - {fileID: 21300000, guid: b470042ff89d2234399715cdc65f2eca, type: 3}
+  - {fileID: 21300000, guid: fe592d8ff1926234384e58518a9ae2c4, type: 3}
+  - {fileID: 21300000, guid: 93b021479c1aa1343977e48f6e7ad623, type: 3}
+  - {fileID: 21300000, guid: 0d43695ea7eae244fb0b4b6c9dc75df6, type: 3}
+  preview: []

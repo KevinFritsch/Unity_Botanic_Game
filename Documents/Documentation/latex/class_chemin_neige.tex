@@ -1,0 +1,92 @@
+\hypertarget{class_chemin_neige}{}\section{Chemin\+Neige Class Reference}
+\label{class_chemin_neige}\index{Chemin\+Neige@{Chemin\+Neige}}
+Inheritance diagram for Chemin\+Neige\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_chemin_neige}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+override void \mbox{\hyperlink{class_chemin_neige_accd4258086b766c710d5de5ad49b4eba}{Refresh\+Tile}} (Vector3\+Int position, I\+Tilemap tilemap)
+\item 
+override void \mbox{\hyperlink{class_chemin_neige_a01e906730aaebbc00adc64cf776be853}{Get\+Tile\+Data}} (Vector3\+Int position, I\+Tilemap tilemap, ref Tile\+Data tile\+Data)
+\end{DoxyCompactItemize}
+\subsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{class_chemin_neige_a5aafd7cc2981345075a2b20edd747fce}{Has\+Road}} (I\+Tilemap tilemap, Vector3\+Int position)
+\end{DoxyCompactItemize}
+\subsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Sprite \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_chemin_neige_ae02bf65481eb3ca35e8a2b1744b007c3}{CheminN}}
+\item 
+Sprite \mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_chemin_neige_a6819770f9927f3a012ed332673330ddb}{preview}}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_chemin_neige_a01e906730aaebbc00adc64cf776be853}\label{class_chemin_neige_a01e906730aaebbc00adc64cf776be853}} 
+\index{Chemin\+Neige@{Chemin\+Neige}!Get\+Tile\+Data@{Get\+Tile\+Data}}
+\index{Get\+Tile\+Data@{Get\+Tile\+Data}!Chemin\+Neige@{Chemin\+Neige}}
+\subsubsection{\texorpdfstring{Get\+Tile\+Data()}{GetTileData()}}
+{\footnotesize\ttfamily override void Chemin\+Neige.\+Get\+Tile\+Data (\begin{DoxyParamCaption}\item[{Vector3\+Int}]{position,  }\item[{I\+Tilemap}]{tilemap,  }\item[{ref Tile\+Data}]{tile\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Redefinition de la méthode Get\+Tile\+Data qui modifie la case courante en fonction des cases adjacentes. 
+\begin{DoxyParams}{Parameters}
+{\em position} & Position de la case. \\
+\hline
+{\em tilemap} & Tile\+Map de la case courante. \\
+\hline
+{\em tile\+Data} & Les données relatives à la case courante. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_chemin_neige_a5aafd7cc2981345075a2b20edd747fce}\label{class_chemin_neige_a5aafd7cc2981345075a2b20edd747fce}} 
+\index{Chemin\+Neige@{Chemin\+Neige}!Has\+Road@{Has\+Road}}
+\index{Has\+Road@{Has\+Road}!Chemin\+Neige@{Chemin\+Neige}}
+\subsubsection{\texorpdfstring{Has\+Road()}{HasRoad()}}
+{\footnotesize\ttfamily bool Chemin\+Neige.\+Has\+Road (\begin{DoxyParamCaption}\item[{I\+Tilemap}]{tilemap,  }\item[{Vector3\+Int}]{position }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+Méthode qui permet de vérifier si la position appartient à la Tile\+Map. 
+\begin{DoxyParams}{Parameters}
+{\em position} & Position de la case. \\
+\hline
+{\em tilemap} & Tile\+Map de la case courante. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Booléen vrai si la position appartient à la Tile\+Map. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_chemin_neige_accd4258086b766c710d5de5ad49b4eba}\label{class_chemin_neige_accd4258086b766c710d5de5ad49b4eba}} 
+\index{Chemin\+Neige@{Chemin\+Neige}!Refresh\+Tile@{Refresh\+Tile}}
+\index{Refresh\+Tile@{Refresh\+Tile}!Chemin\+Neige@{Chemin\+Neige}}
+\subsubsection{\texorpdfstring{Refresh\+Tile()}{RefreshTile()}}
+{\footnotesize\ttfamily override void Chemin\+Neige.\+Refresh\+Tile (\begin{DoxyParamCaption}\item[{Vector3\+Int}]{position,  }\item[{I\+Tilemap}]{tilemap }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Méthode qui permet de raffraichir la page. 
+\begin{DoxyParams}{Parameters}
+{\em position} & Position sur la page. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\mbox{\Hypertarget{class_chemin_neige_ae02bf65481eb3ca35e8a2b1744b007c3}\label{class_chemin_neige_ae02bf65481eb3ca35e8a2b1744b007c3}} 
+\index{Chemin\+Neige@{Chemin\+Neige}!CheminN@{CheminN}}
+\index{CheminN@{CheminN}!Chemin\+Neige@{Chemin\+Neige}}
+\subsubsection{\texorpdfstring{CheminN}{CheminN}}
+{\footnotesize\ttfamily Sprite \mbox{[}$\,$\mbox{]} Chemin\+Neige.\+CheminN\hspace{0.3cm}{\ttfamily [private]}}
+
+tableau représentant les différentes images de chemin. \mbox{\Hypertarget{class_chemin_neige_a6819770f9927f3a012ed332673330ddb}\label{class_chemin_neige_a6819770f9927f3a012ed332673330ddb}} 
+\index{Chemin\+Neige@{Chemin\+Neige}!preview@{preview}}
+\index{preview@{preview}!Chemin\+Neige@{Chemin\+Neige}}
+\subsubsection{\texorpdfstring{preview}{preview}}
+{\footnotesize\ttfamily Sprite \mbox{[}$\,$\mbox{]} Chemin\+Neige.\+preview\hspace{0.3cm}{\ttfamily [private]}}
+
+Tableau représentant les previews. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/kevin/\+Documents/\+\_\+\+Informatique S3/\+P\+R\+O\+J\+E\+T T3\+\_\+git/\+Juthoke/\+Juthoke/\+Assets/\+Scripts/Chemin\+Neige.\+cs\end{DoxyCompactItemize}

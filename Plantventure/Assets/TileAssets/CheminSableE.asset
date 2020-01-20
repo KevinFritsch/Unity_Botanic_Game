@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2eaf9bf430c2d44dbc4e12914d478be, type: 3}
+  m_Name: CheminSableE
+  m_EditorClassIdentifier: 
+  m_Sprite: {fileID: 21300000, guid: 7ea5944303822ed43a5e84460f3c5e73, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Transform:
+    e00: 1
+    e01: 0
+    e02: 0
+    e03: 0
+    e10: 0
+    e11: 1
+    e12: 0
+    e13: 0
+    e20: 0
+    e21: 0
+    e22: 1
+    e23: 0
+    e30: 0
+    e31: 0
+    e32: 0
+    e33: 1
+  m_InstancedGameObject: {fileID: 0}
+  m_Flags: 1
+  m_ColliderType: 1
+  CheminN:
+  - {fileID: 21300000, guid: e79df0475a163c941a52e2389f254878, type: 3}
+  - {fileID: 21300000, guid: 3d32f941322ae054582829fdc40a484d, type: 3}
+  - {fileID: 21300000, guid: ebdaf918163568f4685a8a5d5b0915f4, type: 3}
+  - {fileID: 21300000, guid: 3f538d2f2a40b67499add59f29154113, type: 3}
+  - {fileID: 21300000, guid: 7ea5944303822ed43a5e84460f3c5e73, type: 3}
+  - {fileID: 21300000, guid: 4bed911643bc7964f922dff451d5b720, type: 3}
+  - {fileID: 21300000, guid: e4ee5517a3f5c0c4eba2be9a12f7b998, type: 3}
+  - {fileID: 21300000, guid: 7ec5a86a6890879479e42f60420704bf, type: 3}
+  - {fileID: 21300000, guid: 5937da289c0f1fe41bfb3eb028f87b78, type: 3}
+  - {fileID: 21300000, guid: 5c52146f4da92b54983dd87e15c9846c, type: 3}
+  - {fileID: 21300000, guid: e9129ccaaeb93c5449771803a02b15ad, type: 3}
+  - {fileID: 21300000, guid: 2ec1aec234dbd7f4a9dfac8fbbf5358d, type: 3}
+  - {fileID: 21300000, guid: d9e8c532daf990e4aaf34d4bfa2684f4, type: 3}
+  preview: []
