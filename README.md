@@ -25,7 +25,7 @@ Le joueur va dans un premier temps acquérir le plus de connaissances possibles 
 
 
  ### Installation avec un installateur
- * Téléchargez l'installateur du jeu en cliquant sur ce lien : **[Téléchargement de l'installateur](https://git.unistra.fr/T432_DIP18_T3_C/Juthoke/raw/master/Installation_Plantventure.exe)**
+ * Téléchargez l'installateur du jeu en cliquant sur ce lien : **[Téléchargement de l'installateur](https://github.com/KevinFritsch/Unity_Botanic_Game/blob/master/Installation_Plantventure.exe)**
 
 
  * Choisissez la langue d'installation et cliquez sur **Suivant**\
@@ -39,9 +39,6 @@ Le joueur va dans un premier temps acquérir le plus de connaissances possibles 
  * Lancez le jeu **Plantventure** et cliquez sur **Play**
 
 
- ### Installation du jeu comprenant tous les fichiers sources
- * Installez les fichiers du jeu en cliquant sur ce lien : **[Téléchargement du fichier zip](https://git.unistra.fr/T432_DIP18_T3_C/Juthoke/-/archive/master/Juthoke-master.zip)**
- * Cliquez sur l'exécutable :  **Juthoke/Executable/`Juthoke.exe`**
 
 
 # Les touches du jeu 
@@ -51,10 +48,6 @@ Le joueur va dans un premier temps acquérir le plus de connaissances possibles 
  * **← ↑ → ↓** : Déplacements du joueur. 
   
 
-# Documentations
-
-* **[Le Wiki des connaissances théoriques et scientifiques du jeu](https://git.unistra.fr/T432_DIP18_T3_C/Juthoke/wikis/Wiki-:-Plantventure)**
-* Pour accéder à la documentation générée du code : **Documents/Documentation/html/`index.html`**
 
 
 # Logiciels et outils utilisés
